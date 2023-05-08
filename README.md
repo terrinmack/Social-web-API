@@ -5,10 +5,10 @@ Module 18: NoSQL-Social Network API
 
 ## Table of Contents:
 - [Description](#Description)
-- [Acceptance Criteria](#AcceptanceCriteria)
+- [Acceptance Criteria](#Acceptance-Criteria)
 - [Installation](#Installation)
 - [Tests](#Tests)
-- [Walkthrough Video](#WalkthroughVideo)
+- [Walkthrough Video](#Walkthrough-Video)
 - [License](#License)
 - [Contact](#Contact)
 
