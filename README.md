@@ -4,12 +4,13 @@
 Module 18: NoSQL-Social Network API
 
 ## Table of Contents:
-- [ Description](#Description)
-- [ Acceptance Criteria](#AcceptanceCriteria)
-- [ Installation](#Installation)
-- [ Walkthrough Video](#WalkthroughVideo)
-- [ License](#License)
-- [ Contact](#Contact)
+- [Description](#Description)
+- [Acceptance Criteria](#AcceptanceCriteria)
+- [Installation](#Installation)
+- [Tests](#Tests)
+- [Walkthrough Video](#WalkthroughVideo)
+- [License](#License)
+- [Contact](#Contact)
 
 ## Description
 
@@ -35,17 +36,78 @@ Module 18: NoSQL-Social Network API
 - npm install express
 - npm install mongoose
 4. Start the server using `npm start`
-5. 
+5. Open Insomnia and enter the localhost url to test api routes
+
+## Tests
+Testing API calls using Insomnia
 
 
+**`/api/users`**
+![Delete Friend Screenshot](screenshots/deleteFriend.png)
+* `GET` all users
+* `POST` a new user
+    ```json
+    // example data
+    {
+        "username": "lernantino",
+        "email": "lernantino@gmail.com"
+    }
+    ```
 
-## Walkthrough Video
+**`/api/users/:userid`**
+* `GET` a single user by their`_id` 
+* `PUT` to update a user's info by their `_id`
+* `DELETE` to remove user by their`_id`
+
+**`/api/users/:userId/friends/:friendId`**
+![Delete Friend Screenshot](screenshots/deleteFriend.png)
+* `POST` to add a new friend for the selected user
+* `DELETE` to remove a friend from the selected user
+
+**`/api/thoughts`** 
+![Post Thought Screenshot](screenshots/postThought.jpg)
+* `GET` to get all thoughts
+* `POST` to create a new thought
+    ```json
+    // example data
+    {
+    "thoughtText": "Here's a cool thought...",
+    "username": "lernantino",
+    "userId": "5edff358a0fcb779aa7b118b"
+    }
+    ```
+
+**`/api/thoughts/:thoughtId`**
+* `GET` to get a single thought by `_id`
+* `PUT` to update a thought by `_id`
+* `DELETE` to remove a thought by `_id`
+
+
+**`/api/thoughts/:thoughtId/reactions`**
+![Post Reaction Screenshot](screenshots/postReaction.png)
+* `POST` to create a reaction 
+    ```json
+    // example data
+    {
+    "reactionBody":"Why is the sky blue?",
+    "username":"lernantino"
+    }
+    ```
+
+**`/api/thoughts/:thoughtId/reactions/:reactionId`**
+* `DELETE` remove a reaction by its `reactionId` 
+
+## Walkthrough Video and Screensho
 [All Routes Walkthrough](https://watch.screencastify.com/v/rgaHD7TwvDozJzFv2qRj)
 
 ## License
 Licensed under [MIT](https://choosealicense.com/licenses/mit/) license.
-## Contact
 
+## Credits 
+Thank you to AskBCS specifically Jaytee for helping with my reaction code issues! 
+
+## Contact
+[Terri Mack](https://github.com/terrinmack?tab=repositories)
 
 
 
