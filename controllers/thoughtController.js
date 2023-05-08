@@ -68,12 +68,12 @@ module.exports = {
     // remove a reaction from a thought
     async removeReaction(req, res) {
             try {
-                const reaction = await Thought.findOneAndUpdate(
+                const thought = await Thought.findOneAndUpdate(
                     { _id: req.params.thoughtId },
-                    { $pull: { reactions: { reactionId: req.params.reactionId } } },
+                    { $pull: { reactions: { _id: req.params.reactionId } } },
                     { new: true }
                 );
-                res.json(reaction);
+                res.json(thought);
             }
             catch (err) {
                 res.status(500).json(err);
