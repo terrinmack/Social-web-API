@@ -4,18 +4,18 @@
 Module 18: NoSQL-Social Network API
 
 ## Table of Contents:
-[1. Description](#Description)
-[2. Acceptance Criteria](#AcceptanceCriteria)
-[3. Installation](#Installation)
-[4. Walkthrough Video](#WalkthroughVideo)
-[5. License](#License)
-[6. Contact](#Contact)
+- [ Description](#Description)
+- [ Acceptance Criteria](#AcceptanceCriteria)
+- [ Installation](#Installation)
+- [ Walkthrough Video](#WalkthroughVideo)
+- [ License](#License)
+- [ Contact](#Contact)
 
 ## Description
 
 ##  Acceptance Criteria
 
-`GIVEN a social network API
+` -  GIVEN a social network API
 WHEN I enter the command to invoke the application
 THEN my server is started and the Mongoose models are synced to the MongoDB database
 WHEN I open API GET routes in Insomnia for users and thoughts
