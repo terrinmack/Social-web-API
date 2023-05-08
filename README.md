@@ -1,4 +1,4 @@
-![Badge](https://img.shields.io/badge/license-MIT-green?style=plastic&logo=appveyor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Social-web-API
 Module 18: NoSQL-Social Network API
@@ -27,11 +27,23 @@ Module 18: NoSQL-Social Network API
 
 ## Installation
 
+1. Clone the repository
+2. Ensure you have mongoDB installed. Have Insomnia installed as well for ease.
+2. Within the terminal, run `npm install` if the package.json file is present.
+3. If the package.json file is not present, run the following commands:
+- npm init -y
+- npm install express
+- npm install mongoose
+4. Start the server using `npm start`
+5. 
+
+
+
 ## Walkthrough Video
 [All Routes Walkthrough](https://watch.screencastify.com/v/rgaHD7TwvDozJzFv2qRj)
 
 ## License
-
+Licensed under [MIT](https://choosealicense.com/licenses/mit/) license.
 ## Contact
 
 
