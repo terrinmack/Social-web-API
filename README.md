@@ -97,7 +97,7 @@ Testing API calls using Insomnia
 **`/api/thoughts/:thoughtId/reactions/:reactionId`**
 * `DELETE` remove a reaction by its `reactionId` 
 
-## Walkthrough Video and Screensho
+## Walkthrough Video
 [All Routes Walkthrough](https://watch.screencastify.com/v/rgaHD7TwvDozJzFv2qRj)
 
 ## License
