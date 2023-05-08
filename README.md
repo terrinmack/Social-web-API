@@ -2,6 +2,7 @@
 
 # Social-web-API
 Module 18: NoSQL-Social Network API
+The goal of this assignment/application is to use MongoDb to create an API for a theortecial social network application. This application will function similar to a traditional blog where a user can share thoughts, comment on someone else's thoughts, react to thoughts, and add friends. The user will also have the opportunity to delete their user info, remove friends, and delete reactions. 
 
 ## Table of Contents:
 - [Description](#Description)
